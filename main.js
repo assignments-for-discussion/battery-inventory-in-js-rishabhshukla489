@@ -7,7 +7,7 @@ function countBatteriesByUsage(cycles) {
   cycles.forEach(cycle=> {
     if(cycle<410){
       low+=1;
-    }else if(cycle>=410 && cycle<=909){
+    }else if(cycle>410 && cycle<909){
       medium+=1;
     }else{
       high+=1;
