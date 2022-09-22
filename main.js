@@ -16,9 +16,9 @@ function countBatteriesByUsage(cycles) {
 
 
   return {
-    lowCount:low,
-    mediumCount:medium,
-    highCount:high
+    "lowCount":low,
+    "mediumCount":medium,
+    "highCount":high
   };
 }
 
