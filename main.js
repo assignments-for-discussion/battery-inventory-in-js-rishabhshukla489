@@ -1,24 +1,24 @@
 const assert = require('assert');
 
 function countBatteriesByUsage(cycles) {
-  var lowCount=0;
-  var mediumCount=0;
-  var highCount=0;
+  var low=0;
+  var medium=0;
+  var high=0;
   cycles.forEach(cycle=> {
     if(cycle<410){
-      lowCount+=1;
+      low+=1;
     }else if(cycle>=410 && cycle<909){
-      mediumCount+=1;
+      medium+=1;
     }else{
-      highCount+=1;
+      high+=1;
     }
   });
 
 
   return {
-    lowCount,
-    mediumCount,
-    highCount
+    lowCount:low,
+    mediumCount:medium,
+    highCount:high
   };
 }
 
